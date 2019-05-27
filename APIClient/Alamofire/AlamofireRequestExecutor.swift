@@ -10,8 +10,8 @@ public struct AlamofireExecutorError: Error {
 
 open class AlamofireRequestExecutor: RequestExecutor {
     
-    open let manager: SessionManager
-    open let baseURL: URL
+    public let manager: SessionManager
+    public let baseURL: URL
     
     public init(baseURL: URL, manager: SessionManager = SessionManager.default) {
         self.manager = manager
